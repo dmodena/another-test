@@ -11,8 +11,8 @@ object TesteCadastro {
     var pe = new Pessoa("John", 25)
     var pr = new Produto("Viola", 25, 2.70)
 
-    println(pe)
-    println(pr)
+    println(pe.imprimir)
+    println(pr.imprimir)
 
   }
 }

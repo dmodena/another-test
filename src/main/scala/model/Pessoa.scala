@@ -3,7 +3,7 @@ package model
 /**
   * Created by dmodena on 03/05/16.
   */
-class Pessoa(var nome : String, var idade : Int) {
+class Pessoa(var nome : String, var idade : Int) extends Impressao {
 
   def getNome() : String = nome
   def getIdade() : Int = idade
@@ -16,6 +16,6 @@ class Pessoa(var nome : String, var idade : Int) {
   }
 
   override
-  def toString : String = s"Nome: $nome - Idade: $idade"
+  def imprimir : String = s"Nome: $nome - Idade: $idade"
 
 }

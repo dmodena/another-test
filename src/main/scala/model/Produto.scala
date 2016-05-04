@@ -3,7 +3,7 @@ package model
 /**
   * Created by dmodena on 03/05/16.
   */
-class Produto(var descricao : String, var quantidade : Int, var valor : Double) {
+class Produto(var descricao : String, var quantidade : Int, var valor : Double) extends Impressao {
 
   def getDescricao() : String = descricao
   def getQuantidade() : Int = quantidade
@@ -22,5 +22,5 @@ class Produto(var descricao : String, var quantidade : Int, var valor : Double) 
   }
 
   override
-  def toString : String = s"Produto: $descricao - Qtd: $quantidade - Valor: $valor"
+  def imprimir : String = s"Produto: $descricao - Qtd: $quantidade - Valor: $valor"
 }
